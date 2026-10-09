@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="favicon.ico" sizes="any">
+<title>동해 미니 포크레인 정찰제</title>
+<link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,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">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<meta name="description" content="동해시 좁은 공간·토목·철거 전문 얀마 미니포크레인. 반나절 450,000원, 하루 650,000원 정찰제. 010-8686-4441">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto+Mono:wght@700&display=swap">
+<style>
+/* 레이아웃: Gemini 시안의 흐름을 따름. 남색 머리말·첫 화면(정찰제 가격) → 견적 계산기 → 보유 장비 → 시공 현장 → 남색 꼬리말(사업자 정보).
+   남색 띠는 두 테마 모두 같은 색, 가운데 밝은 구간만 다크 모드에서 어두워짐. 강조는 장비 노랑 하나 */
+:root{
+  --navy:#1c2140; --navy-2:#2a3160; --on-navy:#f2f4fb; --on-navy-muted:#aab2d6;
+  --amber:#ffb627; --amber-ink:#1d1606; --price:#ffc53d;
+  --bg:#f3f4f7; --card:#ffffff; --ink:#191c2a; --muted:#5f6577; --line:#e1e4ec; --chip:#fff4d9; --chip-ink:#a86a00;
+  --body:"Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+  --num:"Roboto Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#12142a; --card:#1b1e38; --ink:#edf0fa; --muted:#a3a9c4; --line:#2c3157; --chip:#3a2f12; --chip-ink:#ffcf6b; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#12142a; --card:#1b1e38; --ink:#edf0fa; --muted:#a3a9c4; --line:#2c3157; --chip:#3a2f12; --chip-ink:#ffcf6b; color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);line-height:1.65;word-break:keep-all;padding-bottom:calc(70px + env(safe-area-inset-bottom,0px))}
+@media (min-width:860px){body{padding-bottom:0}}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--amber);outline-offset:3px}
+h1,h2,h3{margin:0;text-wrap:balance}
+.w{max-width:1120px;margin:0 auto;padding-inline:16px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:700 1rem var(--body);border-radius:10px;padding:14px 22px;text-decoration:none;border:0;cursor:pointer}
+.btn svg{width:18px;height:18px;flex:none}
+.btn-amber{background:var(--amber);color:var(--amber-ink);box-shadow:0 6px 18px rgba(255,182,39,.28)}
+.btn-ghost{background:rgba(255,255,255,.08);color:var(--on-navy);box-shadow:inset 0 0 0 1px rgba(255,255,255,.22)}
+
+/* 머리말 */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--navy);color:var(--on-navy);border-bottom:1px solid rgba(255,255,255,.06)}
+.top .w{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-block:10px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;min-width:0}
+.mark{width:46px;height:46px;border-radius:12px;background:var(--amber);color:var(--navy);display:grid;place-items:center;flex:none;font-weight:900;font-size:1.02rem;letter-spacing:-.04em;line-height:1;box-shadow:0 0 0 2px rgba(255,255,255,.9),0 4px 14px rgba(255,182,39,.45)}
+.brand b{display:block;font-weight:900;font-size:1.08rem;line-height:1.2}
+.brand small{display:block;font-size:.7rem;color:var(--price);font-weight:700;line-height:1.3}
+.top nav{display:none;gap:26px;font-weight:700;font-size:.92rem}
+.top nav a{text-decoration:none;color:var(--on-navy-muted)}
+.top nav a:hover{color:var(--on-navy)}
+.top .btn{padding:9px 14px;font-size:.88rem;border-radius:8px}
+.top .btn span{display:none}
+@media (min-width:860px){.top nav{display:flex}.top .btn span{display:inline}}
+
+/* 첫 화면 */
+.hero{background:radial-gradient(120% 90% at 85% 10%,#33407e 0,transparent 55%),linear-gradient(180deg,var(--navy),var(--navy-2));color:var(--on-navy);overflow:hidden}
+.hero .w{display:grid;gap:22px;padding-block:44px 52px}
+@media (min-width:960px){.hero .w{grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);align-items:center;padding-block:72px}}
+.pin{display:inline-flex;align-items:center;gap:6px;justify-self:start;font-size:.8rem;font-weight:700;color:var(--price);background:rgba(255,182,39,.1);border:1px solid rgba(255,182,39,.35);border-radius:999px;padding:5px 12px}
+.hero h1{font-weight:900;font-size:clamp(1.85rem,6.4vw,3.1rem);line-height:1.22;letter-spacing:-.02em}
+.hero h1 em{font-style:normal;color:var(--amber)}
+.hero p{margin:0;color:var(--on-navy-muted);max-width:34em}
+.prices{display:grid;grid-template-columns:1fr 1fr;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:16px;overflow:hidden}
+.prices div{padding:16px 18px;min-width:0}
+.prices div+div{border-left:1px solid rgba(255,255,255,.14)}
+.prices .short{grid-column:1/-1;border-left:0;border-top:1px solid rgba(255,255,255,.14);display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding-block:12px}
+.prices .short b{font-family:var(--body);font-size:1.05rem;font-weight:700}
+.prices span{display:block;font-size:.78rem;color:var(--on-navy-muted);font-weight:500}
+.prices b{font-family:var(--num);font-size:clamp(1.35rem,5.4vw,2rem);color:var(--price);font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+.prices b small{font-family:var(--body);font-size:.85rem;color:var(--on-navy);margin-left:3px}
+.cta{display:flex;flex-wrap:wrap;gap:10px}
+.hero-pic{position:relative;border-radius:20px;overflow:hidden;box-shadow:0 20px 50px rgba(0,0,0,.35);aspect-ratio:4/5;max-height:560px;width:100%}
+.hero-pic img{width:100%;height:100%;object-fit:cover}
+.hero-pic span{position:absolute;left:12px;bottom:12px;background:rgba(20,24,48,.82);color:#fff;font-size:.8rem;padding:5px 11px;border-radius:999px}
+@media (max-width:959px){.hero-pic{aspect-ratio:16/10}}
+
+section.band{padding-block:64px}
+.sh{text-align:center;display:grid;gap:6px;margin-bottom:30px}
+.sh h2{font-weight:900;font-size:clamp(1.6rem,5vw,2.2rem);letter-spacing:-.02em}
+.sh p{margin:0;color:var(--muted)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px}
+
+/* 견적 계산기 */
+.when{display:grid;gap:12px;align-items:start;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr))}
+.cal-wrap{display:grid;gap:6px;font-size:.88rem;color:var(--muted);align-content:start}
+.cal{background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:10px;color:var(--ink)}
+.cal-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:6px}
+.cal-head b{font-size:1rem}
+.cal-nav{width:44px;height:44px;border-radius:10px;border:1px solid var(--line);background:var(--card);color:var(--ink);font-size:1.4rem;line-height:1;cursor:pointer}
+.cal-nav:disabled{opacity:.35;cursor:default}
+.cal-dow,.cal-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;text-align:center}
+.cal-dow span{font-size:.78rem;padding:4px 0}
+.cal-dow span:first-child,.cal-grid .sun{color:#d9363e}
+.cal-grid button{height:44px;border-radius:10px;border:0;background:transparent;color:inherit;font:inherit;font-size:.98rem;cursor:pointer;font-variant-numeric:tabular-nums}
+.cal-grid button:hover:not(:disabled){background:var(--chip)}
+.cal-grid button:disabled{opacity:.3;cursor:default}
+.cal-grid button.today{box-shadow:inset 0 0 0 1px var(--amber)}
+.cal-grid button[aria-pressed="true"]{background:var(--amber);color:var(--amber-ink);font-weight:700}
+.cal-pick{margin:0;color:var(--ink);font-weight:600}
+.cal-pick button{margin-left:8px;border:0;background:none;color:var(--muted);text-decoration:underline;font:inherit;font-weight:400;cursor:pointer;padding:6px 2px}
+.when label{display:grid;gap:6px;font-size:.88rem;color:var(--muted)}
+.calc input[type=date]{min-height:48px;color-scheme:inherit}
+.calc{max-width:760px;margin:0 auto;padding:22px;display:grid;gap:24px}
+.q{display:grid;gap:10px}
+.q > label,.q legend{font-weight:700;font-size:.92rem;padding:0}
+fieldset{border:0;margin:0;padding:0;min-width:0}
+select,.calc input[type=date],.calc input[type=text]{font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:12px;width:100%}
+.opts{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr))}
+.opt{position:relative}
+.opt input{position:absolute;opacity:0;inset:0;margin:0;cursor:pointer}
+.opt label{display:flex;gap:10px;align-items:flex-start;border:1.5px solid var(--line);border-radius:12px;padding:12px 14px;cursor:pointer;background:var(--bg);height:100%}
+.opt label::before{content:"";flex:none;width:18px;height:18px;margin-top:3px;border:2px solid var(--muted);border-radius:50%}
+.opt.chk label::before{border-radius:5px}
+.opt input:checked + label{border-color:var(--amber);background:var(--chip)}
+.opt input:checked + label::before{border-color:var(--amber);background:var(--amber);box-shadow:inset 0 0 0 3px var(--card)}
+.opt input:focus-visible + label{outline:3px solid var(--amber);outline-offset:2px}
+.opt input:disabled + label{cursor:default}
+.opt b{display:block;font-size:.95rem}
+.opt span{font-size:.82rem;color:var(--muted)}
+.total{display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;align-items:center;border-top:1px dashed var(--line);padding-top:18px}
+.total span{display:block;font-size:.8rem;color:var(--muted)}
+.total b{font-family:var(--num);font-size:clamp(1.9rem,7vw,2.5rem);color:#e8890c;font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+.total b small{font-family:var(--body);font-size:1rem;color:var(--ink);margin-left:4px}
+.total .row{display:flex;gap:8px;flex-wrap:wrap}
+.btn-line{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1.5px var(--line)}
+.note{font-size:.8rem;color:var(--muted);margin:0}
+#ctoast{font-size:.85rem;color:var(--muted);min-height:1.2em;margin:0}
+
+/* 정찰제 약속 */
+.promise{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr))}
+.promise .card{padding:20px;display:grid;gap:8px;align-content:start}
+.promise .ic{width:40px;height:40px;border-radius:10px;background:var(--chip);color:var(--chip-ink);display:grid;place-items:center;font-weight:900}
+.promise h3{font-size:1.05rem;font-weight:900}
+.promise p,.promise li{margin:0;color:var(--muted);font-size:.92rem}
+.promise ul{margin:0;padding-left:1.1em;display:grid;gap:4px}
+.vow{background:var(--navy);color:var(--on-navy);border-radius:18px;padding:18px 22px;margin-bottom:16px;display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.vow b{font-size:clamp(1.05rem,3.6vw,1.3rem);font-weight:900}
+.vow span{color:var(--on-navy-muted);font-size:.9rem}
+/* 동네별 도착 시간 */
+.eta{max-width:860px;margin:0 auto;padding:22px;display:grid;gap:18px}
+.towns{display:flex;flex-wrap:wrap;gap:8px}
+.towns button{font:700 .95rem var(--body);color:var(--ink);background:var(--bg);border:1.5px solid var(--line);border-radius:999px;padding:8px 16px;cursor:pointer}
+.towns button[aria-pressed="true"]{background:var(--amber);border-color:var(--amber);color:var(--amber-ink)}
+.eta-out{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 14px;border-top:1px dashed var(--line);padding-top:16px}
+.eta-out b{font-family:var(--num);font-size:clamp(1.7rem,6vw,2.3rem);color:#e8890c;letter-spacing:-.02em}
+.eta-out span{color:var(--muted)}
+.zones{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr))}
+.zone{border:1px solid var(--line);border-radius:12px;padding:12px 14px;font-size:.9rem}
+.zone b{display:block;font-size:.95rem}
+.zone span{color:var(--muted)}
+.zone.on{border-color:var(--amber);background:var(--chip)}
+
+/* 보유 장비 */
+.eq{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr))}
+.eq .card{padding:22px;display:grid;gap:10px;align-content:start}
+.eq .size{width:52px;height:52px;border-radius:12px;background:var(--chip);color:var(--chip-ink);display:grid;place-items:center;font-family:var(--num);font-size:1.15rem}
+.eq h3{font-size:1.15rem;font-weight:900}
+.eq p{margin:0;color:var(--muted);font-size:.93rem}
+.spec{margin:4px 0 0;display:grid;grid-template-columns:auto minmax(0,1fr);gap:6px 14px;font-size:.86rem;border-top:1px solid var(--line);padding-top:12px}
+.spec dt{color:var(--muted)}
+.spec dd{margin:0;font-weight:700;font-variant-numeric:tabular-nums;text-align:right}
+.tag{justify-self:start;background:var(--chip);color:var(--chip-ink);font-size:.78rem;font-weight:700;border-radius:6px;padding:3px 9px}
+
+/* 시공 현장 */
+.works{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr))}
+.works .card{overflow:hidden;display:flex;flex-direction:column}
+.works img{width:100%;aspect-ratio:16/10;object-fit:cover}
+.works .tx{padding:16px 18px 20px;display:grid;gap:6px}
+.works h3{font-size:1.02rem;font-weight:700}
+.works p{margin:0;color:var(--muted);font-size:.88rem}
+.works time{font-family:var(--num);font-size:.78rem;color:var(--chip-ink)}
+
+/* 꼬리말 */
+footer{background:var(--navy);color:var(--on-navy)}
+footer .w{display:grid;gap:26px;padding-block:44px 24px}
+@media (min-width:860px){footer .w{grid-template-columns:1fr 1fr;align-items:start}}
+footer h2{font-size:1.2rem;font-weight:900}
+footer p{color:var(--on-navy-muted);margin:8px 0 0;font-size:.92rem}
+.tel{font-family:var(--num);font-size:clamp(1.7rem,7vw,2.3rem);color:var(--price);text-decoration:none;user-select:all;display:inline-block;margin-top:10px}
+.bizbox{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:14px;padding:18px 20px;font-size:.85rem;color:var(--on-navy-muted)}
+.bizbox dl{margin:8px 0 0;display:grid;grid-template-columns:auto minmax(0,1fr);gap:4px 12px}
+.bizbox dt{white-space:nowrap}
+.bizbox dd{margin:0;color:var(--on-navy)}
+.copy{grid-column:1/-1;text-align:center;font-size:.75rem;color:var(--on-navy-muted);border-top:1px solid rgba(255,255,255,.1);padding-top:18px}
+
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:30;background:var(--navy);padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));display:grid;grid-template-columns:1.5fr 1fr;gap:8px;box-shadow:0 -6px 20px rgba(0,0,0,.25)}
+.bar .btn{padding:12px}
+@media (min-width:860px){.bar{display:none}}
+@media (prefers-reduced-motion:no-preference){.btn{transition:transform .12s,filter .15s}.btn:hover{filter:brightness(1.05)}.btn:active{transform:scale(.97)}.opt label{transition:border-color .15s,background-color .15s}}
+</style>
+</head>
+<body>
+
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+  <symbol id="i-calc" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M8 6h8M8 11h.01M12 11h.01M16 11h.01M8 15h.01M12 15h.01M16 15h.01M8 19h8"/></g></symbol>
+</svg>
+
+<header class="top"><div class="w">
+  <a class="brand" href="#">
+    <span class="mark" aria-hidden="true">동해</span>
+    <span><b>동해 미니 포크레인</b><small>동해시 미니굴착기 정찰제 임대·작업</small></span>
+  </a>
+  <nav aria-label="바로가기"><a href="#work">주요작업</a><a href="#calc">실시간견적</a><a href="#sites">시공현장</a><a href="#fleet">보유장비</a></nav>
+  <a class="btn btn-amber" href="tel:01086864441"><svg><use href="#i-phone"/></svg><span>전화 상담 문의</span></a>
+</div></header>
+
+<main>
+<section class="hero" id="work"><div class="w">
+  <div style="display:grid;gap:20px;min-width:0">
+    <div class="pin"><svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="2.5" fill="currentColor"/></svg>강원특별자치도 동해시 전지역 출장 · 예약 우선</div>
+    <h1>동해시 <span style="display:inline-block">좁은 공간·토목·철거</span> 전문<br><em>얀마 미니포크레인</em> 정찰제 지원</h1>
+    <p>골목 안 배관 터파기, 잔디밭 조경, 상가 바닥 철거, 옹벽 기초 정지 작업까지. 거품 없는 정찰제 가격과 숙련된 기술로 안전하게 시공해 드립니다.</p>
+    <div class="prices">
+      <div><span>0.5일 (반나절 / 4시간)</span><b>450,000<small>원</small></b></div>
+      <div><span>1일 (하루 일대 / 8시간)</span><b>650,000<small>원</small></b></div>
+      <div class="short"><span>4시간 미만 작업</span><b>별도 상담</b></div>
+    </div>
+    <div class="cta">
+      <a class="btn btn-amber" href="tel:01086864441"><svg><use href="#i-phone"/></svg>즉시 전화 문의하기</a>
+      <a class="btn btn-ghost" href="#calc"><svg><use href="#i-calc"/></svg>실시간 견적 계산</a>
+    </div>
+  </div>
+  <div class="hero-pic"><img src="img/site-06.jpg" alt="건물 앞 광장에서 조경 공사 중인 얀마 미니포크레인"><span>동해 · 건물 앞 광장 조경 공사</span></div>
+</div></section>
+
+<section class="band" id="calc"><div class="w">
+  <div class="sh"><h2>실시간 작업 견적 계산기</h2><p>작업 조건에 맞는 예상 비용을 바로 확인해 보세요.</p></div>
+  <form class="card calc" id="cf" autocomplete="off">
+    <div class="q"><label for="eq">1. 장비 선택</label>
+      <select id="eq"><option>얀마 ViO17 (기본 일대)</option><option>얀마 ViO20 (기본 일대)</option><option>얀마 ViO35 (기본 일대)</option></select></div>
+    <fieldset class="q"><legend>2. 작업 시간 선택</legend>
+      <div class="opts">
+        <div class="opt"><input type="radio" name="time" id="t4" value="450000" data-label="반나절 (4시간)" checked><label for="t4"><span><b>반나절 (4시간)</b><span>450,000원</span></span></label></div>
+        <div class="opt"><input type="radio" name="time" id="t8" value="650000" data-label="하루 일대 (8시간)"><label for="t8"><span><b>하루 일대 (8시간)</b><span>650,000원</span></span></label></div>
+      </div>
+        <div class="opt"><input type="radio" name="time" id="t0" value="0" data-label="4시간 미만 (별도 상담)"><label for="t0"><span><b>4시간 미만</b><span>별도 상담</span></span></label></div></fieldset>
+    <fieldset class="q"><legend>3. 어태치먼트 (부속 장비 선택)</legend>
+      <div class="opts">
+        <div class="opt chk"><input type="checkbox" id="a0" checked disabled><label for="a0"><span><b>기본 바가지</b><span>무료</span></span></label></div>
+        <div class="opt chk"><input type="checkbox" id="a1" value="50000" data-label="브레이카/유압파쇄기"><label for="a1"><span><b>브레이카 / 유압파쇄기</b><span>+50,000원</span></span></label></div>
+        <div class="opt chk"><input type="checkbox" id="a2" value="50000" data-label="돌집게/집게"><label for="a2"><span><b>돌집게 / 집게</b><span>+50,000원</span></span></label></div>
+      </div></fieldset>
+    <fieldset class="q"><legend>4. 작업 날짜 · 현장 주소</legend>
+      <div class="when">
+        <div class="cal-wrap"><span id="cal-lab">작업 희망 날짜</span>
+          <div class="cal" role="group" aria-labelledby="cal-lab">
+            <div class="cal-head"><button type="button" class="cal-nav" id="calPrev" aria-label="이전 달">‹</button><b id="calTitle" aria-live="polite"></b><button type="button" class="cal-nav" id="calNext" aria-label="다음 달">›</button></div>
+            <div class="cal-dow" aria-hidden="true"><span>일</span><span>월</span><span>화</span><span>수</span><span>목</span><span>금</span><span>토</span></div>
+            <div class="cal-grid" id="calGrid"></div>
+          </div>
+          <p class="cal-pick" id="calPick">원하는 날짜를 눌러 주세요. 아직 모르시면 비워 두셔도 돼요.</p>
+          <input type="hidden" id="wdate">
+        </div>
+        <label>현장 주소<input type="text" id="waddr" placeholder="예) 동해시 천곡동 ○○길 12" autocomplete="street-address"></label>
+      </div></fieldset>
+    <div class="total">
+      <div><span>예상 견적 금액</span><b id="sum">450,000<small>원</small></b></div>
+      <div class="row"><a class="btn btn-amber" id="book" href="sms:01086864441">이 견적으로 예약 문의</a><button class="btn btn-line" type="button" id="copyq">견적 내용 복사 후 문자</button></div>
+    </div>
+    <p id="ctoast" aria-live="polite"></p>
+    <p class="note">현장 거리와 작업 여건에 따라 달라질 수 있어요. 정확한 금액은 전화로 확인해 드립니다.</p>
+  </form>
+</div></section>
+
+<section class="band" id="promise" style="padding-top:0"><div class="w">
+  <div class="sh"><h2>정찰제 약속</h2><p>현장에서 말없이 금액이 올라가는 일은 없습니다.</p></div>
+  <div class="vow"><b>견적 금액 그대로 받습니다.</b><span>추가 비용이 생길 일은 작업 전에 먼저 말씀드리고, 동의하신 뒤에만 진행해요.</span></div>
+  <div class="promise">
+    <article class="card"><div class="ic">₩</div><h3>가격 그대로</h3><ul><li>반나절 (4시간) 450,000원</li><li>하루 일대 (8시간) 650,000원</li><li>브레이카 · 집게는 각 +50,000원</li><li>기본 바가지는 무료</li><li><b>4시간 미만 작업은 별도 문의</b></li></ul></article>
+    <article class="card"><div class="ic">운</div><h3>운반비</h3><p>동해시 안은 장비 운반비가 견적에 포함돼 있어요. 동해시 밖은 거리에 따라 미리 안내해 드립니다.</p></article>
+    <article class="card"><div class="ic">+</div><h3>추가 요금이 붙는 경우</h3><ul><li>약속한 시간을 넘겨 작업을 늘릴 때</li><li>폐기물 반출이나 덤프트럭이 필요할 때</li><li>작업 중 부속 장비를 추가할 때</li></ul><p>모두 미리 말씀드리고 동의하신 뒤에만 진행합니다.</p></article>
+    <article class="card"><div class="ic">취</div><h3>비 오는 날 · 취소</h3><ul><li>비나 눈으로 작업이 어려우면 위약금 없이 날짜를 바꿔 드려요.</li><li>전날까지 취소하시면 비용이 없습니다.</li><li>당일 출발 뒤 취소는 운반비가 생길 수 있어 미리 상의드려요.</li></ul></article>
+  </div>
+</div></section>
+
+<section class="band" id="eta" style="padding-top:0"><div class="w">
+  <div class="sh"><h2>동네별 도착 시간</h2><p>천곡동에서 장비를 트럭에 싣고 출발하는 시간까지 넣은 대략적인 시간입니다.</p></div>
+  <div class="card eta">
+    <div class="towns" id="towns" aria-label="동네 선택"></div>
+    <div class="eta-out" aria-live="polite"><span id="eta-town">천곡동</span><b id="eta-time">약 30~40분</b><span>준비 시간 포함</span></div>
+    <div class="zones" id="zones">
+      <div class="zone" data-z="0"><b>약 30~40분</b><span>천곡동 · 송정동 · 부곡동 · 동호동 · 발한동</span></div>
+      <div class="zone" data-z="1"><b>약 40~50분</b><span>북평동 · 북삼동 · 묵호동</span></div>
+      <div class="zone" data-z="2"><b>약 50분~1시간</b><span>망상동 · 삼화동</span></div>
+    </div>
+    <p class="note">다른 현장에서 작업 중일 때는 그 작업을 마친 뒤 출발해요. 급한 일은 전화로 먼저 가능한 시간을 확인해 주세요.</p>
+  </div>
+</div></section>
+
+<section class="band" id="fleet" style="padding-top:0"><div class="w">
+  <div class="sh"><h2>보유 장비 라인업</h2><p>얀마 미니굴착기로 현장 조건에 맞춰 투입합니다.</p></div>
+  <div class="eq"><article class="card"><div class="size">17</div><h3>얀마 ViO17</h3><p>하부 폭을 950mm까지 줄여 1m가 안 되는 대문이나 통로도 지나갑니다. 골목, 마당, 건물 실내 작업에 맞습니다.</p><dl class="spec"><dt>자체중량</dt><dd>1,801kg</dd><dt>전폭</dt><dd>950~1,280mm (가변)</dd><dt>최대 굴삭 깊이</dt><dd>2,370mm</dd><dt>최대 굴삭 반경</dt><dd>3,870mm</dd><dt>버켓 용량</dt><dd>0.04㎥</dd><dt>엔진 출력</dt><dd>14ps</dd></dl><span class="tag">초소형 특화</span></article><article class="card"><div class="size">20</div><h3>얀마 ViO20</h3><p>힘과 크기의 균형이 좋아 배관 터파기, 조경, 배수로 같은 일반 작업에 두루 씁니다.</p><dl class="spec"><dt>자체중량</dt><dd>2,160kg</dd><dt>전폭</dt><dd>1,380mm</dd><dt>최대 굴삭 깊이</dt><dd>2,410mm</dd><dt>최대 굴삭 반경</dt><dd>4,340mm</dd><dt>버켓 용량</dt><dd>0.063㎥</dd><dt>엔진 출력</dt><dd>20.4ps</dd></dl><span class="tag">범용 만능 작업</span></article><article class="card"><div class="size">35</div><h3>얀마 ViO35</h3><p>성토, 부지 정리, 깊은 터파기처럼 작업량이 많은 현장을 빠르게 처리합니다.</p><dl class="spec"><dt>자체중량</dt><dd>3,741kg</dd><dt>전폭</dt><dd>1,550mm</dd><dt>최대 굴삭 깊이</dt><dd>3,240mm</dd><dt>최대 굴삭 반경</dt><dd>5,545mm</dd><dt>버켓 용량</dt><dd>0.083㎥</dd><dt>엔진 출력</dt><dd>24.7ps</dd></dl><span class="tag">고출력 토목</span></article>
+  </div>
+  <p class="note" style="text-align:center;margin-top:14px">세 장비 모두 뒤꽁무니가 차체 폭 안에서 도는 후방 초선회형이라 벽에 붙어서도 돌 수 있어요. 제원 출처: YK건기 (얀마 미니굴삭기)</p>
+</div></section>
+
+<section class="band" id="sites" style="padding-top:0"><div class="w">
+  <div class="sh"><h2>동해 미니 포크레인 실제 시공 현장</h2><p>동해시와 가까운 지역 현장에서 직접 찍은 작업 사진입니다.</p></div>
+  <div class="works">
+    <article class="card"><img src="img/work-01.jpg" alt="공장 안 사일로 옆 작업" loading="lazy"><div class="tx"><time datetime="2026-10-08">2026.10.08</time><h3>공장 안 사일로 옆 작업</h3><p>공장 설비 사이 좁은 자리에 들어가 바닥 작업을 했습니다.</p></div></article>
+    <article class="card"><img src="img/work-02.jpg" alt="옥상 정원 흙 작업" loading="lazy"><div class="tx"><time datetime="2026-06-22">2026.06.22</time><h3>옥상 정원 흙 작업</h3><p>크레인으로 올린 장비로 건물 옥상 화단에 흙을 넣고 골랐습니다.</p></div></article>
+    <article class="card"><img src="img/work-03.jpg" alt="비탈 현장 땅 고르기" loading="lazy"><div class="tx"><time datetime="2025-10-30">2025.10.30</time><h3>비탈 현장 땅 고르기</h3><p>경사진 현장의 흙을 걷어 내고 평탄하게 정리했습니다.</p></div></article>
+    <article class="card"><img src="img/work-04.jpg" alt="공장 바닥 배관 터파기" loading="lazy"><div class="tx"><time datetime="2024-11-14">2024.11.14</time><h3>공장 바닥 배관 터파기</h3><p>ViO17로 공장 실내 바닥을 깨고 배관 자리를 팠습니다.</p></div></article>
+    <article class="card"><img src="img/work-05.jpg" alt="건물 사이 조경 정비" loading="lazy"><div class="tx"><time datetime="2024-10-18">2024.10.18</time><h3>건물 사이 조경 정비</h3><p>난간 옆 좁은 화단에 경계석을 놓고 흙을 정리했습니다.</p></div></article>
+    <article class="card"><img src="img/work-06.jpg" alt="건물 입구 옆 배관 터파기" loading="lazy"><div class="tx"><time datetime="2024-10-17">2024.10.17</time><h3>건물 입구 옆 배관 터파기</h3><p>출입구 옆 좁은 자리에서 배관 고랑을 파고 되메웠습니다.</p></div></article>
+    <article class="card"><img src="img/work-07.jpg" alt="잡초 우거진 마당 정리" loading="lazy"><div class="tx"><time datetime="2024-10-08">2024.10.08</time><h3>잡초 우거진 마당 정리</h3><p>집 옆 마당의 풀과 뿌리를 체 바가지로 걷어 냈습니다.</p></div></article>
+    <article class="card"><img src="img/work-08.jpg" alt="산비탈 굴착" loading="lazy"><div class="tx"><time datetime="2024-10-03">2024.10.03</time><h3>산비탈 굴착</h3><p>숲 경사지에서 천막을 덮어 가며 흙을 파고 정리했습니다.</p></div></article>
+    <article class="card"><img src="img/work-09.jpg" alt="밭 정리 · 나무 심을 자리" loading="lazy"><div class="tx"><time datetime="2024-09-26">2024.09.26</time><h3>밭 정리 · 나무 심을 자리</h3><p>안개 낀 밭을 체 바가지로 고르고 묘목 자리를 만들었습니다.</p></div></article>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="w">
+  <div>
+    <h2>동해 미니 포크레인</h2>
+    <p>동해시 전지역 좁은 골목, 공장 실내, 조경 및 토목 공사 전문 미니포크레인 임대 업체입니다. 정찰제 단가로 안심하고 이용해 주세요.</p>
+    <a class="tel" href="tel:01086864441">010-8686-4441</a>
+  </div>
+  <div class="bizbox">
+    <b style="color:var(--on-navy)">사업자 정보</b>
+    <dl>
+      <dt>대표자</dt><dd>한승희</dd>
+      <dt>사업자등록번호</dt><dd>535-76-00398</dd>
+      <dt>사업장 소재지</dt><dd>강원특별자치도 동해시 감추5길 36 (천곡동)</dd>
+      <dt>업태 / 종목</dt><dd>건설업 / 건설장비 운영업</dd>
+    </dl>
+  </div>
+  <div class="copy">© 동해 미니 포크레인. All rights reserved.</div>
+</div></footer>
+
+<div class="bar">
+  <a class="btn btn-amber" href="tel:01086864441"><svg><use href="#i-phone"/></svg>전화 010-8686-4441</a>
+  <a class="btn btn-ghost" href="#calc">견적 계산</a>
+</div>
+
+<script>
+(function(){
+  var won=function(n){return n.toLocaleString('ko-KR');};
+  var ios=/iPhone|iPad|iPod/i.test(navigator.userAgent)||(navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1);
+  function smsLink(text){return 'sms:01086864441'+(ios?'&':'?')+'body='+encodeURIComponent(text);}
+  var f=document.getElementById('cf'), sum=document.getElementById('sum'), book=document.getElementById('book'), t=document.getElementById('ctoast');
+  var dEl=document.getElementById('wdate'), grid=document.getElementById('calGrid'), title=document.getElementById('calTitle'), pick=document.getElementById('calPick'), prev=document.getElementById('calPrev'), next=document.getElementById('calNext');
+  var now=new Date(), today=new Date(now.getFullYear(),now.getMonth(),now.getDate()), view=new Date(today.getFullYear(),today.getMonth(),1), MAXM=6;
+  function iso(d){return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');}
+  function drawCal(){
+    var y=view.getFullYear(), m=view.getMonth(), first=new Date(y,m,1).getDay(), days=new Date(y,m+1,0).getDate();
+    title.textContent=y+'년 '+(m+1)+'월';
+    var off=(y-today.getFullYear())*12+m-today.getMonth(); prev.disabled=off<=0; next.disabled=off>=MAXM;
+    var h=''; for(var i=0;i<first;i++) h+='<span></span>';
+    for(var d=1;d<=days;d++){var dt=new Date(y,m,d), v=iso(dt);
+      h+='<button type="button" data-v="'+v+'"'+(dt<today?' disabled':'')+' class="'+(dt.getDay()===0?'sun ':'')+(+dt===+today?'today':'')+'" aria-pressed="'+(dEl.value===v)+'" aria-label="'+(m+1)+'월 '+d+'일">'+d+'</button>';}
+    grid.innerHTML=h;
+  }
+  function showPick(){
+    if(dEl.value){pick.innerHTML='선택한 날짜: '+fmtDate(dEl.value)+'<button type="button" id="calClear">지우기</button>';}
+    else pick.textContent='원하는 날짜를 눌러 주세요. 아직 모르시면 비워 두셔도 돼요.';
+  }
+  grid.addEventListener('click',function(e){var b=e.target.closest('button[data-v]'); if(!b||b.disabled)return; dEl.value=b.dataset.v; drawCal(); showPick(); calc();});
+  pick.addEventListener('click',function(e){if(e.target.id==='calClear'){dEl.value=''; drawCal(); showPick(); calc();}});
+  prev.addEventListener('click',function(){view.setMonth(view.getMonth()-1); drawCal();});
+  next.addEventListener('click',function(){view.setMonth(view.getMonth()+1); drawCal();});
+  drawCal();
+  function fmtDate(v){if(!v)return ''; var d=new Date(v+'T00:00'); return v.replace(/-/g,'.')+' ('+'일월화수목금토'[d.getDay()]+')';}
+  function calc(){
+    var time=f.querySelector('input[name=time]:checked');
+    var total=+time.value, adds=[];
+    ['a1','a2'].forEach(function(id){var c=document.getElementById(id); if(c.checked){total+=+c.value; adds.push(c.dataset.label);}});
+    var ask=time.value==='0';
+    sum.innerHTML=ask?'<span style="font-family:var(--body);letter-spacing:-.02em">별도 상담</span>':won(total)+'<small>원</small>';
+    var text='[동해 미니 포크레인 견적 문의]\n장비: '+document.getElementById('eq').value+'\n시간: '+time.dataset.label+'\n부속: 기본 바가지'+(adds.length?', '+adds.join(', '):'')+'\n예상 금액: '+(ask?'별도 상담'+(total?' (부속 +'+won(total)+'원)':''):won(total)+'원')+'\n현장 주소: '+document.getElementById('waddr').value.trim()+'\n희망 날짜: '+fmtDate(document.getElementById('wdate').value);
+    book.href=smsLink(text);
+    return text;
+  }
+  f.addEventListener('change',calc);
+  f.addEventListener('input',calc);
+  f.addEventListener('submit',function(e){e.preventDefault();});
+  document.getElementById('copyq').addEventListener('click',function(){
+    var text=calc();
+    function go(){ location.href=smsLink(text); }
+    try{navigator.clipboard.writeText(text).then(function(){t.textContent='견적 내용을 복사했어요. 문자 창이 열리면 그대로 보내 주세요 (010-8686-4441)';go();},function(){t.textContent='문자 창에서 010-8686-4441로 보내 주세요';go();});}
+    catch(e){t.textContent='문자 창에서 010-8686-4441로 보내 주세요';go();}
+  });
+  calc();
+})();
+</script>
+<script>
+(function(){
+  var Z=[['천곡동','송정동','부곡동','동호동','발한동'],['북평동','북삼동','묵호동'],['망상동','삼화동']];
+  var T=['약 30~40분','약 40~50분','약 50분~1시간'];
+  var box=document.getElementById('towns');
+  Z.forEach(function(list,z){list.forEach(function(n){
+    var b=document.createElement('button');b.type='button';b.textContent=n;b.dataset.z=z;b.setAttribute('aria-pressed',n==='천곡동'?'true':'false');
+    b.addEventListener('click',function(){pick(b);});box.appendChild(b);});});
+  function pick(b){
+    box.querySelectorAll('button').forEach(function(o){o.setAttribute('aria-pressed','false');});
+    b.setAttribute('aria-pressed','true');
+    document.getElementById('eta-town').textContent=b.textContent;
+    document.getElementById('eta-time').textContent=T[+b.dataset.z];
+    document.querySelectorAll('.zone').forEach(function(el){el.classList.toggle('on',el.dataset.z===b.dataset.z);});
+  }
+  pick(box.querySelector('button'));
+})();
+</script>
+
+</body>
+</html>
