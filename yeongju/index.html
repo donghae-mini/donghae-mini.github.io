@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="favicon.ico" sizes="any">
+<title>영주 미니 포크레인 정찰제</title>
+<link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,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">
+<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAbY0lEQVR42u2deZRdVZ3vv7/f3ufcsW7NmUhCIoFEwqRAQAMPQaZIPxpEe4G0OCAP1AZd67nE1uY1r5F22fJsoX0MT9vVOEE30gsZRAVFJtEOEIUghBAIkDmp6dYdzzl7/94f51alEnJvVSU3VTe4v+sushJq3br3nM/57d/+TZvkZ4vh5LQnsbsETg4OJweHk4PDycHh5OBwcnA4vY3hEHe9HBz1RO56OTicnBwcTg4OJweHk4PDycHh5OBwcnA4OTicHBxODg4nB4eTk4PDycHh5OBwcnA4OTicHBxODg4nB4eTg8PJweHk5OBwcnA4OTicHBxODg4nB4eTg8PJweHk4HBycDg5OTicHBxODg4nB4eTg8PJweHk4HBycDg5OJwcHE4ODicnB4eTg8PJweG036Xf9t9wIofEuLNC/kzhIGoSQQ6Ot5/ZCMPx6fCUkLMefz5wiIA82bpDX/DN7nIIRXu2DkSohPSDz/Yfc2hgK8TOB2sdOEQgAgEEoBHrTgBR7b/7qMjizT5VDqkBHOWAgpAa+x3xh2zdpbMZ16pV4LACESgGaSENKNkFDUswQETWQARMe//NCUh4YtHIclgZ//3JE1Kt6poQEAGGDng4jAUTOCHQggrvGFTrt+s3+1S+TINF9hQ6MrYzYxfOiOZ0mVzOQguqZEIiAtO+Gqd6P9CYY/bk+rtyT6xJZBJiW4wPRRgs8aWnFi48rWhKrPjAhCO+rCotsPjjOv+BZ5NPrfFf2aoHi6oSIjQU2w4i+FrSvvTmzNJ54fsOD855d3nWrAghmSrtixXZl0fz+Te8h59PdKQlsq0Fh8fYPsynHVGBHofy1oXDWKiEAHj4meTtj2YeWZ0YKrOvJOGJpyThYazVtwIr2DSgX9um71mZ/ub92fOPL3/81OKiBSHKbA2m3m1M+9KellxaTIvBoRlVIwlvv/hEeorIyMgrb+jr7srd92xKhLJJ25O1Nrb2gj1ecV9L0gNBBop808/bfvRk+ooziledM5xKiikT8TgegAjIolmrgBUYW3u1mr9hbPNtxlTAES/2KmP//TeZv/1Re3+B2zNCEGMxrn0WgREA0ArdWRtGdN3duYefS/zfywYPWxhgvP0FBPAkm3DhrZaEI/YBOSlfu7P96z9tSyfRmdmbNVsEkYAJvTn7zKv+eV/v+YcLh+Z3mShq5H8IoBS2DbIVFx1vPTisQCXt1/69/fp7ct1tFoJ98eYEiAxyaRko0eW3dWo1IVsau7dELj7eSnAYC5W1/+++tuvvyfW0WWubc3uMhafgq0kssk1Zj5mgGMyT+xY0EtGZ6M8TeJIcM0Px/trB7Rc4rIVKybMvJK79Sa4zU3M8G19EjLgQMt7tnJZgZTmgfJmYJueQCuBr+FomaOSCiIJocougZuTLFER0YMAhADHCKl394/ZqRG3JRtu/+FmJLKKIjAUBisXTYEKzjM2+bwcgOHxuuKPA2eQktrICaMaGfrWhX3njLYJECA3mdUdzu0xkJ8GHYgyWeH53BEtNtx96v5iNjP2PX2Z/vy7RnbEN/AzFqIRUrFBn1s7tiuJLP1TirUNcDjiXtoow7RFJIiCiaz48DAxP8kIAafvpf+l6eXO6MyNGxlm2SlU67h3BLVcOoESTrMESCKFMilsbDgGYEZT4O49kErpRsFkxhsq0oMd87H3FM4+qzOk0GV+MpUKV1mzR965M/fiJdCWkpC+2FUILkzRjIoDGlo3er19IZBLjfwVrkUnIr1cnN27Qs3sNokm5EfsraKybbzbSsvKPiRc2eGm/LhyxMTzzyPJNlw3MmmlQJRiCwIMkk9LTXV1+dOWCE0qX3tK1Na9SXktkNCZ1A4yFTtk7nsxu6tfdbXbcxUiAhMamAXXHb1NfuDAfDbFW0/+V90MgmuT+Z5PVkOrlyZhQrNKxC6vf++zArE4bDrINSAxEIBYSwZYpHOJlR1X/9YqBlCdmvDWYCIrrvqbByljolKxb5936cDaXshMk2whyKXvbw9l16zydagl72eSLxwxU+Q+v+179NcUKfC3fumQo22ZNmWL3c7SAgwjM8DTCQV52TOVzK4bzZW6QTCFCGFF/gff4GizR1JNBWoKQPn97Z1+BvQnnw0TgafQN81X/1hkExHr6+WjmsiIC0tI3qDb0q3qhCMXIl+n9R1SPPCQwJVL1jadSsGU6//jKv/w8GxraYwCACeWQ3nlQeO7x5SjcJacfez/5En//sXRkaGpyucZCeWIEV9zc+fgav3OSWVxj0Z6WJ1/2L7+58zt/0689MSEpfnvAARBjsMTFCqn6ibHI0HHvCEQLqtTYgUdE83ujg3tN7MG8FTciBCHmdZn/+ZEhlHd18i3gS36L9+Mn0qEB7+dKHQGMgU5LvkB/852ue1Ymu7J7kyuILDrScvfKdHQTfft/DLS32ahESk1PBoCbfIUYxSqVA6oXTIyLNuZ0mIk8yiJQnvTmrLF7dghFoBT6Cxz1q6jEprDzFRXZTMmyIkDsFel2+9w67wNf7b336VRXdpzoToOvbyy6sva+Z5PnXN/zx3W+bre11OsBDYcAIFQjChvfeoGnBRN7lIXga0H95BkDgQELNNdiyVPmkMZ5fCKorA2B2+5tO++fel7a5HVmbGMyIoPIjMNHZ0Ze2uSd9/XuW3/aFgIqa4lg7JQGfpq5rBABFhlfkn7DzSchX2aZ2OaQBIUKoV7GgWAFSU+gxFqiMcCJANL8QgcZqUFhAvsCT6oFfuCx9C2/yP7XK4lsymaTjVaTOEY+I2eYsGVINYisRxbZpASGrv5hx92/S11xVvEv3l1OZC1CkoDiulfC/q2L0003sklfEloqdQq+BWBg7RZNMv5tAKNQ5I39qp7PT4ARdKSF04LyLnaQBPAk4cm+mweMZHOIwAqkBVoQ0NqN+sFVybt/l37uDU8xOrPWSqPkC9WK3XHjxwaVknP/qSeh0cCCGov4bVet9z91i3/k/OwFJ5Y+8K7KoXMi5QsiGq3Bxkh+iqllLQcAQzNypjNj3+zTak+1ayJI+PLES35QYK0hti771kKl7R9eTK7frutV9lqLtC+r3/Qu/FqPsbu/ExHi6lTe65Q9gbVAASwgIKRykV/Zpp9Yk/jV88mn1/n9BU560p4WkfFzckph2xB/5bz8qcdWAHz5vOH/fXduRruNTKMnxAgyCSHCSxu9a+7s+Of77bHvqJ5+VHX54uqiGSadsYivc1yyb5pZndDkZcUaZNvsobOidVt1ysdbEwpWkPblxU3ebQ9lr/xQPhxivaeMs7UgDRvSNx9oa7AAxcmtrXl+fUeSaBfrEv+VCem9LgYjlKvUN6y25nn9Nv3CRm/NRr12i940qPIl1krSvnRl7USwAKAVtuX5E6cUv/xXeVMmAF+8IL+xX333N5kZuUZ8jFqvlC/phEQGj7yQfOi5VC5lZ3eaQ2dFS+ZES+eGC2ZEM3O2u82mEk1LWzc7tyKAJycvCR5YlarHsBW0JeX6e9oOnR2efVIZwzz24sYoKE+QkGtv7/jVC8nG/p0AnkIiLfX+796FkoyFSslvn0984pYuY1GskhVSLHEKvitrY4IngkWced6e50tOKt74qQGJKF79bETfvHQwNPj+45meNjtu5UeMCBPaUrVSyzd26Fe26PufJSZJJ0Qxvnf5wBnLyqbUnOhIk715IiCkDxxT6cra0Oz5iRepBbwvvbXr2//ZVrZQWauyVqVFZURnrUrbzUPqM9/uuukX2Y70BBITY6p/d3vtdZCRCRLQ8ndWF/RGoaGurHRlbXu65sTEbz6R51MxrEV/ga88u3DLFQMsBFvbypIFW9x8xcDnVhQGCmzthPZWMgbKhCftaenK2q6sRIYW9EYnHV6RKjXL82iy5WCCDWjBvPCMIyt3/T7VUaeWP253sxb/6872Ox7PvP+oymFzou6UDS36Cvz0q/5vVic2DapcatpSbkQwBsmcvfz04me+15mWSTclEEERhsqU8eWmTwx8/MyirRCN6a4jgljYkK7/2MChc8Jr7mzPl6k9JUYmEXGvLdyMSkSXnVZMtVsz3LTWpv1QCSaA4PMrCvevSja4tbFD0JaWtVv18w+0EaC1iNT8x3TCtk93kwgTpMznLSvf+PPs69t1wpMJ3rPYLpYDKlbplHdWvnpR/pjFVVvkt+484823LfPHzyq8a2F4zR253/wpmU5IypeJNxzEveCLZ4cfPKEsZW7ihqX5QSJm2AotPSy49JTiQIE9NY6FTHnSlbWdWZtNSFtKerK2M2M9Nf0dIkSwETId5qMnl0oBqQlc9DjsVg1pxzDP7oi+dcnAT6/uO2ZRYIa5Xq9e7JGYAh/9juCeL/Z96+MDczrMjmGuhhRXrY7/SwnFKl28vJTtNDZqZuRjv9SQEsNW6Ssfzj+11l/1ut+eahQXsmPbWAV2Yrdtcj7yvhiPKn/kvaVbH870F5Sn9pzfieNRxiJfJmNo8ZzwopNKl5xS7O4xKLEtN8ov7nRNKsSMT64onHd8+fZHM3c8kV6z2VMsmYQorkXe9vjbqxHmdUcXn1SSKjc3zqGuvbin+XAAYuCnZNmi8L6VqXyFk17T4r7MCA2MpYm8rB1n5AYRIkMXn1Q6qNdIRG81+9Yg02X6+/Ujf0pkR8IttQoSAoDIoFSlYpVTvrz3sOAL5w7/40VDp7y7kmYylUn0f8f9E7ZKmSTec1TlohPKi2ZFlZA2DaiBIkcGTNBvqTXXjMESX3Za8ZzlpabPFyH52eL9lXqw4LQ8u8a/6FvdOwqcS0nj3fxELh8BhQrN6TS+lsajE+I9kbE0UGBp+J7lgH529Y7jD6/a8h4urhWQJxu26FOv6w0MxZXPgaEgRGjJ19Kbs0sPCt9/ROW0I6pL5ofwBRU20d5PjhCBFSgNJC0CeulN75HViV+tTr6wwdue52pEHovvwVfCHLv28sg1O+bPCSWg1o2QvvURN0V69+Lgvi9tv+zWrmde87vbauGBvfmgjMBQvkSfPqPwhfOGPYyTnBEBe7Jpu/rv3+ip1B/eMpGVxQQ0b1547nHlf36grbvN+lrmdEaHzoretSA87pBg6bxwdreBL7WsR0Bxk8u+PAOKIAa2wExYMj9cckjw6RWFLX1q9Zve06/6q9Z7azfrLYMqCKhvmK9aMXzw/MAWmVu8wPitAWNTpMPmRfd+acfVP2y/67dpYmSTggl3+8RXygj6i9ydtTdcMnT5imEYgiU0Ts8I4Em13IRniQgS0pVnFeZ2mSVzonk95uDuKNdu4QksIYKEZIPaCqKa9OzSyFvZgOLQxaxuM2umOX1ZGSHlh/j1Pr2hT724Uf/lcRWJaH9UfOzHZWWX9UUDnjy4Mvl/7s09+5onoJRvfb3zKZddXZZ4BbGCakilgLJJu+Jd5b89f3jRwWG8J5yIcSZPNm7T7/uH3nHHPu22rMSGfTfUlAaSAot46lBkYIQIYJqiYXMisEICKIJWAi1gQAEVMtHuZpS5CbRMxQgGZoiBGFqxrHLWUdUH/5C848n00+v8LUNsLWklWu3MPsc3JnY5E54s6IlOW1r96H8rHbkogIUpTCLCQ3u76pOCSrxl8ROqbaU0oEUTNKZrtz1CugAWSIhKvoX8Ku/7p5ui4S21zV6JFOOc95TOWVbevE3/bq236nX/xTe9zYMcGgoiYhJPI+XJwhnR0nnRsQuD4w8JMh0GhmyZQPu9mlwEpLGtnx97MaXVgdp+bS1OXVrtardi9sl+TOlMsHi/botMhNk90fmzw/OphJAqJY4MIksE0QoJLTotUAJLCMgUOS5J3+tfGm87pX40k8bsTZQnqzd4F3+7K5NsuQlgE3wOqwE9+vfburr3sDlvXThifyJ++mMnLt4OJH0BASSj1tKWKa4MHPX8R+sKZazLiZ1r7dhu7LEb0YEix/FNqROvK1dptxidp9CRkRYcDzdRODzoZphYPY3fYdSxF7s7QfEOPh4OBqk1s4ABllrCm3ZFJF59LWGkukIEbKgjY6+/cKhBazIRQkMLRjoQ4w3UaJr3AIWjWdXIukW+z9hnPS4PYw3lCeIIVkhRhUoh5UtquEyRodAgMsQsnoJWSHnSkbGZhCQSolK2VuQeUlsKl32gUDNLDaxZmRH3trghL60GR6y4kps9gS+IaGCAV2/w127WL2/2Xtumdgyr/iIPFSkyFFuUOAYaByKZkElId5vpzNh53eaw2dGimdHhc8OFswwARDBVjgwxg/ZEiZqWCZYOjokGQhgqLRCs36Qfei752J8Sz73ubRpU1dp4WtEqdi0l3qAqwtjn3FgMlmhHwTMGkSURMEtXxi45KDpxUfXso6vHLwoSWYMqm7A5MQAHx1QEdkTAKUGEX65M/uDxzFNr/G15xSwpD2lfMiMVoLVAmeziZowNmjHDUwJ/ZxtDENF/veI//lLi5l/K0nnBBSeUL1xe6uox0zXM1MExSYOhQQn76KrkDfe1PfVyIrKUSdhahabsms1vQNjIH7t1SsVrTVtSjOC5N/yV6xK3PZz95GnFT59Z8FNi6k87IYDjWgpp2gMw7iaOmgRr/JzQAQ2HteCkDBX4uh90fv/RTGRrdbO2eYNgZUwgPO1LNiFbh9Tf3dF+/9PJ6y8aWra0akq8x1RIZJEvkW3KbkXgaTSuIiMgsqhUmpMfIUIloKaM4Z6K3MoefU+VknUb9Cdv7nrmNb97pNdvKvbPjOEyaSXf+Ouhj55eNOVdSrwEIIUdg/z7tb7ifTUcVpBIyoNPJ//t0Uy2zsgNJpQDOnxu+OUP5qOwCdMA4pzUew8LOtqs2AMnQjpqM1RKXlzvXXBD99YhNSNnQzNFe0gRRAbx8LHPfLdzoMBXfTA/Nl9DAAx62u05y8uQfT78zQBtZtMOFfyq7ijUeFRcb86eubyMCjWhbjP+2FWC3dePP9VwxMOyBvN8+W2dW4ZUe1rC8SqARke7yNj8rYzcOxrzY9hZTicN7RYTOrP22p/kDp0VrTixbEu7lPmIgS02wcRHFpq5HIxjD+JlxRTJNq+r4IDJyu4GByftDXd0PPOaP7PdNiAj9gqtoBxSGMWZF/hamMEAUW0usQhESAShQWhIM3TtMIY9Zd7HGHwmeApfvjP33iXVXFrE7NI00JSyDAEUT6hMMM4qEDe52fVAgsMKOCGvrfd+9GS6K9OQDIIIBoqc8u0hM8NFs8yS2eHBvWZGzqZ8qxU8JXGFemgoMggj6i/xpn61ZrN+ebN+daveOqRSfq3Gv96HSSdk3Vbv9kcyV30wb4qsXPRjGuEQAXx5YFVye1711m8QZUIQkWa5/PTCh95TOmJumM4ItIBGDquSMYvrTjsjAGAJVXpjh3podeK7D2XXbNFt9YevWYuElnufSX52RcGFPaYZDiagSo+9mPTrT0OLM2HZpP3eFf0nH1dBQAjJVkkqNAoDYcwfO90Liuc7MGP+zOjS+eEFJ5Yvu6Xz16uTbak92w8rSPry8mZv7Ua9ZGHYxCX/7SGeSrNBCpUSv9GnGnQ6MaEU0N9/KH/ysnIwyLZCcW+c4lphftzqwwwmMO0yzUePdAFJSOEQd7TZ2z41OKfTVOu3+jCjUKVXt2mo/XWkjYNjonvwUkD5EiuWeqU3YYQZOXPa0ootslZ76XUTwdOIytTVY5YvDsr1TUIcFegvMsihMd27FSvjhB0F0EqYmnCzqHZuwXgWQVrucK4/S8shyPjSnrbWUr3pDJ7C1iH10iaP0hKavTf1xoA9SJVWrfcS9SfFxudRdmctxLkb0wcHEcQgmbZzu0zjwBcTrv1JbuMm7XdYUrWhfdFIaVZcyTH2Ff/j2LEcAFRayLfX3ZV7YYOXql/wZy3SCVnQa2BcHn9aLYcVUFJOODQIorpOQBx+WP2m9xf/2PuDX2T6C8RJUVmrs1alhRPCvpAnpEEKpEGesC+cEJWSkSEwNhQ89aJ/8Td6bnwwm03W3RkxoRrSwt5o8ZwQoTvIflp9jtrcn6MrNz6YbXD+iLXIJGXzoLryX7tu6I2OOTg8fG44r9vMbDc9bbYtaVM+fE+0grUII1RCKlZpoMDbhnnzgFqzRf9xvf/iBl2NqPH4F2ZUQjrrqIqXtabIysExvXEOW6EjDgvOPbbyw8fTvbm6QVJr43NlZduQuvcZ9Z8rUwCSWnxPNEMpSWhJeogsygFFhkxMSUTGEDN8LSlfkn6j8S9MqIaY2W4+9f4iQnJlgtO/WwFBIvq7C/K/XeNvHlLp+vcvnmnk6Z3nVY/6FpGlSkADQgSJ97pE8D0kfYkLyGNHxDQsoSBCoULfuHhw9uxof3QhO59jb4yHBDhoVnjrZQO+kkpIjTssZMQbjUZKb+JmZa3ga/E01MgADNnVb228ujFj2xBfdXbh4tOLpuTIaA044pXelvg9R1bu+FxfW9IOlkirSRR/y9i8vEAmWQqiFSKD/mH64l8Of/XiIVtxYLQSHDEfpsQnH1O970s7Tloc7MhznG3ff6mNWtsjoW+Ys0m5+bKBaz8yZKNdxvs5tQQcABTDFGnJ/PCeq3dcf9FQd9b0Fbgc1iafMDWTCcWIDAaKHEX48Imln39l+1+fUbRlYkdGazmku/JhK6QYV52fv2h56UePp3/yu9RLm7wgoni6/ujecrQvQcZDYXSUQ5w0CSJUQrJCszvMeccXP3lq8bglAczkRjk4OKbJcDEAmAL3ttvPX5D/zJnFJ1/yf/pMauU6//Xtqr/AAGo9j2M6mnam7GWMIyKIDIyleLaHFSS1zO40h88Nzzy6cvYxlTkzIwjZCgFTejAgjRx1Xu8KqBYrAGsVOEZNiESwIftaTj22cuqx5WqB127xnnvdW7tFr9uiN/SrvgIPlagakTFkx1SJcq0BTjyN9rR0ZsysDrNwRtwOGR05P+zqMPAEAdkSj+I4lVv3IKKhEilFxuz5u+dLVKy2Ih3T05rQYCcSh7qVAjyBrh0WEZVouMLDFdo+pIYrFJladSAzPAVPScKTnjbbmbWZhKTTFh5AAksISaJaxejUuxfx6Kl1G71V672EV/fImNBgRrs96Z1Vsa2V32ktOHbZr8rOY2ZY1eYvgHerBtttBAMgJGZnnIOnvUNagLg1vOHRVTCE1jMeGi2pml9JOx9BRLWD3uo9f6OTW6h5I/2a8k1Gx9Q0/r4tGG9pUTga3PsDLrPeWrAeEHEOJweHk4PDycHh5OBwcnJwODk4nBwcTg4OJweHk4PDycHh5OBwcnA4OTicHBxOTg4OJweHk4PDycHh5OBwcnA4OTicHBxODg4nB4eTk4PDycHh5OBwcnA4OTicHBxODg4nB4eTg8PJweHk5OBwcnA4OTicHBxODg4nB4fT2x0OcdfRwVFP7igsB4eTg8PJKdb/BywvsgkY06z3AAAAAElFTkSuQmCC">
+<meta name="description" content="영주시 좁은 공간·토목·철거 전문 얀마 미니포크레인. 반나절 450,000원, 하루 650,000원 정찰제. 010-8686-4441">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto+Mono:wght@700&display=swap">
+<style>
+/* 레이아웃: Gemini 시안의 흐름을 따름. 남색 머리말·첫 화면(정찰제 가격) → 견적 계산기 → 보유 장비 → 시공 현장 → 남색 꼬리말(사업자 정보).
+   남색 띠는 두 테마 모두 같은 색, 가운데 밝은 구간만 다크 모드에서 어두워짐. 강조는 장비 노랑 하나 */
+:root{
+  --navy:#1c2140; --navy-2:#2a3160; --on-navy:#f2f4fb; --on-navy-muted:#aab2d6;
+  --amber:#ffb627; --amber-ink:#1d1606; --price:#ffc53d;
+  --bg:#f3f4f7; --card:#ffffff; --ink:#191c2a; --muted:#5f6577; --line:#e1e4ec; --chip:#fff4d9; --chip-ink:#a86a00;
+  --body:"Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+  --num:"Roboto Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#12142a; --card:#1b1e38; --ink:#edf0fa; --muted:#a3a9c4; --line:#2c3157; --chip:#3a2f12; --chip-ink:#ffcf6b; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#12142a; --card:#1b1e38; --ink:#edf0fa; --muted:#a3a9c4; --line:#2c3157; --chip:#3a2f12; --chip-ink:#ffcf6b; color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);line-height:1.65;word-break:keep-all;padding-bottom:calc(70px + env(safe-area-inset-bottom,0px))}
+@media (min-width:860px){body{padding-bottom:0}}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--amber);outline-offset:3px}
+h1,h2,h3{margin:0;text-wrap:balance}
+.w{max-width:1120px;margin:0 auto;padding-inline:16px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:700 1rem var(--body);border-radius:10px;padding:14px 22px;text-decoration:none;border:0;cursor:pointer}
+.btn svg{width:18px;height:18px;flex:none}
+.btn-amber{background:var(--amber);color:var(--amber-ink);box-shadow:0 6px 18px rgba(255,182,39,.28)}
+.btn-ghost{background:rgba(255,255,255,.08);color:var(--on-navy);box-shadow:inset 0 0 0 1px rgba(255,255,255,.22)}
+
+/* 머리말 */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--navy);color:var(--on-navy);border-bottom:1px solid rgba(255,255,255,.06)}
+.top .w{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-block:10px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;min-width:0}
+.mark{width:46px;height:46px;border-radius:12px;background:var(--amber);color:var(--navy);display:grid;place-items:center;flex:none;font-weight:900;font-size:1.02rem;letter-spacing:-.04em;line-height:1;box-shadow:0 0 0 2px rgba(255,255,255,.9),0 4px 14px rgba(255,182,39,.45)}
+.brand b{display:block;font-weight:900;font-size:1.08rem;line-height:1.2}
+.brand small{display:block;font-size:.7rem;color:var(--price);font-weight:700;line-height:1.3}
+.top nav{display:none;gap:26px;font-weight:700;font-size:.92rem}
+.top nav a{text-decoration:none;color:var(--on-navy-muted)}
+.top nav a:hover{color:var(--on-navy)}
+.top .btn{padding:9px 14px;font-size:.88rem;border-radius:8px}
+.top .btn span{display:none}
+@media (min-width:860px){.top nav{display:flex}.top .btn span{display:inline}}
+
+/* 첫 화면 */
+.hero{background:radial-gradient(120% 90% at 85% 10%,#33407e 0,transparent 55%),linear-gradient(180deg,var(--navy),var(--navy-2));color:var(--on-navy);overflow:hidden}
+.hero .w{display:grid;gap:22px;padding-block:44px 52px}
+@media (min-width:960px){.hero .w{grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);align-items:center;padding-block:72px}}
+.pin{display:inline-flex;align-items:center;gap:6px;justify-self:start;font-size:.8rem;font-weight:700;color:var(--price);background:rgba(255,182,39,.1);border:1px solid rgba(255,182,39,.35);border-radius:999px;padding:5px 12px}
+.hero h1{font-weight:900;font-size:clamp(1.85rem,6.4vw,3.1rem);line-height:1.22;letter-spacing:-.02em}
+.hero h1 em{font-style:normal;color:var(--amber)}
+.hero p{margin:0;color:var(--on-navy-muted);max-width:34em}
+.prices{display:grid;grid-template-columns:1fr 1fr;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:16px;overflow:hidden}
+.prices div{padding:16px 18px;min-width:0}
+.prices div+div{border-left:1px solid rgba(255,255,255,.14)}
+.prices .short{grid-column:1/-1;border-left:0;border-top:1px solid rgba(255,255,255,.14);display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding-block:12px}
+.prices .short b{font-family:var(--body);font-size:1.05rem;font-weight:700}
+.prices span{display:block;font-size:.78rem;color:var(--on-navy-muted);font-weight:500}
+.prices b{font-family:var(--num);font-size:clamp(1.35rem,5.4vw,2rem);color:var(--price);font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+.prices b small{font-family:var(--body);font-size:.85rem;color:var(--on-navy);margin-left:3px}
+.cta{display:flex;flex-wrap:wrap;gap:10px}
+.hero-pic{position:relative;border-radius:20px;overflow:hidden;box-shadow:0 20px 50px rgba(0,0,0,.35);aspect-ratio:4/5;max-height:560px;width:100%}
+.hero-pic img{width:100%;height:100%;object-fit:cover}
+.hero-pic span{position:absolute;left:12px;bottom:12px;background:rgba(20,24,48,.82);color:#fff;font-size:.8rem;padding:5px 11px;border-radius:999px}
+@media (max-width:959px){.hero-pic{aspect-ratio:16/10}}
+
+section.band{padding-block:64px}
+.sh{text-align:center;display:grid;gap:6px;margin-bottom:30px}
+.sh h2{font-weight:900;font-size:clamp(1.6rem,5vw,2.2rem);letter-spacing:-.02em}
+.sh p{margin:0;color:var(--muted)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px}
+
+/* 견적 계산기 */
+.when{display:grid;gap:12px;align-items:start;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr))}
+.cal-wrap{display:grid;gap:6px;font-size:.88rem;color:var(--muted);align-content:start}
+.cal{background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:10px;color:var(--ink)}
+.cal-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:6px}
+.cal-head b{font-size:1rem}
+.cal-nav{width:44px;height:44px;border-radius:10px;border:1px solid var(--line);background:var(--card);color:var(--ink);font-size:1.4rem;line-height:1;cursor:pointer}
+.cal-nav:disabled{opacity:.35;cursor:default}
+.cal-dow,.cal-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;text-align:center}
+.cal-dow span{font-size:.78rem;padding:4px 0}
+.cal-dow span:first-child,.cal-grid .sun{color:#d9363e}
+.cal-grid button{height:44px;border-radius:10px;border:0;background:transparent;color:inherit;font:inherit;font-size:.98rem;cursor:pointer;font-variant-numeric:tabular-nums}
+.cal-grid button:hover:not(:disabled){background:var(--chip)}
+.cal-grid button:disabled{opacity:.3;cursor:default}
+.cal-grid button.today{box-shadow:inset 0 0 0 1px var(--amber)}
+.cal-grid button[aria-pressed="true"]{background:var(--amber);color:var(--amber-ink);font-weight:700}
+.cal-pick{margin:0;color:var(--ink);font-weight:600}
+.cal-pick button{margin-left:8px;border:0;background:none;color:var(--muted);text-decoration:underline;font:inherit;font-weight:400;cursor:pointer;padding:6px 2px}
+.when label{display:grid;gap:6px;font-size:.88rem;color:var(--muted)}
+.calc input[type=date]{min-height:48px;color-scheme:inherit}
+.calc{max-width:760px;margin:0 auto;padding:22px;display:grid;gap:24px}
+.q{display:grid;gap:10px}
+.q > label,.q legend{font-weight:700;font-size:.92rem;padding:0}
+fieldset{border:0;margin:0;padding:0;min-width:0}
+select,.calc input[type=date],.calc input[type=text]{font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:12px;width:100%}
+.opts{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr))}
+.opt{position:relative}
+.opt input{position:absolute;opacity:0;inset:0;margin:0;cursor:pointer}
+.opt label{display:flex;gap:10px;align-items:flex-start;border:1.5px solid var(--line);border-radius:12px;padding:12px 14px;cursor:pointer;background:var(--bg);height:100%}
+.opt label::before{content:"";flex:none;width:18px;height:18px;margin-top:3px;border:2px solid var(--muted);border-radius:50%}
+.opt.chk label::before{border-radius:5px}
+.opt input:checked + label{border-color:var(--amber);background:var(--chip)}
+.opt input:checked + label::before{border-color:var(--amber);background:var(--amber);box-shadow:inset 0 0 0 3px var(--card)}
+.opt input:focus-visible + label{outline:3px solid var(--amber);outline-offset:2px}
+.opt input:disabled + label{cursor:default}
+.opt b{display:block;font-size:.95rem}
+.opt span{font-size:.82rem;color:var(--muted)}
+.total{display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;align-items:center;border-top:1px dashed var(--line);padding-top:18px}
+.total span{display:block;font-size:.8rem;color:var(--muted)}
+.total b{font-family:var(--num);font-size:clamp(1.9rem,7vw,2.5rem);color:#e8890c;font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+.total b small{font-family:var(--body);font-size:1rem;color:var(--ink);margin-left:4px}
+.total .row{display:flex;gap:8px;flex-wrap:wrap}
+.btn-line{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1.5px var(--line)}
+.note{font-size:.8rem;color:var(--muted);margin:0}
+#ctoast{font-size:.85rem;color:var(--muted);min-height:1.2em;margin:0}
+
+/* 정찰제 약속 */
+.promise{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr))}
+.promise .card{padding:20px;display:grid;gap:8px;align-content:start}
+.promise .ic{width:40px;height:40px;border-radius:10px;background:var(--chip);color:var(--chip-ink);display:grid;place-items:center;font-weight:900}
+.promise h3{font-size:1.05rem;font-weight:900}
+.promise p,.promise li{margin:0;color:var(--muted);font-size:.92rem}
+.promise ul{margin:0;padding-left:1.1em;display:grid;gap:4px}
+.vow{background:var(--navy);color:var(--on-navy);border-radius:18px;padding:18px 22px;margin-bottom:16px;display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.vow b{font-size:clamp(1.05rem,3.6vw,1.3rem);font-weight:900}
+.vow span{color:var(--on-navy-muted);font-size:.9rem}
+/* 동네별 도착 시간 */
+.eta{max-width:860px;margin:0 auto;padding:22px;display:grid;gap:18px}
+.towns{display:flex;flex-wrap:wrap;gap:8px}
+.towns button{font:700 .95rem var(--body);color:var(--ink);background:var(--bg);border:1.5px solid var(--line);border-radius:999px;padding:8px 16px;cursor:pointer}
+.towns button[aria-pressed="true"]{background:var(--amber);border-color:var(--amber);color:var(--amber-ink)}
+.eta-out{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 14px;border-top:1px dashed var(--line);padding-top:16px}
+.eta-out b{font-family:var(--num);font-size:clamp(1.7rem,6vw,2.3rem);color:#e8890c;letter-spacing:-.02em}
+.eta-out span{color:var(--muted)}
+.zones{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr))}
+.zone{border:1px solid var(--line);border-radius:12px;padding:12px 14px;font-size:.9rem}
+.zone b{display:block;font-size:.95rem}
+.zone span{color:var(--muted)}
+.zone.on{border-color:var(--amber);background:var(--chip)}
+
+/* 보유 장비 */
+.eq{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr))}
+.eq .card{padding:22px;display:grid;gap:10px;align-content:start}
+.eq .size{width:52px;height:52px;border-radius:12px;background:var(--chip);color:var(--chip-ink);display:grid;place-items:center;font-family:var(--num);font-size:1.15rem}
+.eq h3{font-size:1.15rem;font-weight:900}
+.eq p{margin:0;color:var(--muted);font-size:.93rem}
+.spec{margin:4px 0 0;display:grid;grid-template-columns:auto minmax(0,1fr);gap:6px 14px;font-size:.86rem;border-top:1px solid var(--line);padding-top:12px}
+.spec dt{color:var(--muted)}
+.spec dd{margin:0;font-weight:700;font-variant-numeric:tabular-nums;text-align:right}
+.tag{justify-self:start;background:var(--chip);color:var(--chip-ink);font-size:.78rem;font-weight:700;border-radius:6px;padding:3px 9px}
+
+/* 시공 현장 */
+.works{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr))}
+.works .card{overflow:hidden;display:flex;flex-direction:column}
+.works img{width:100%;aspect-ratio:16/10;object-fit:cover}
+.works .tx{padding:16px 18px 20px;display:grid;gap:6px}
+.works h3{font-size:1.02rem;font-weight:700}
+.works p{margin:0;color:var(--muted);font-size:.88rem}
+.works time{font-family:var(--num);font-size:.78rem;color:var(--chip-ink)}
+
+/* 꼬리말 */
+footer{background:var(--navy);color:var(--on-navy)}
+footer .w{display:grid;gap:26px;padding-block:44px 24px}
+@media (min-width:860px){footer .w{grid-template-columns:1fr 1fr;align-items:start}}
+footer h2{font-size:1.2rem;font-weight:900}
+footer p{color:var(--on-navy-muted);margin:8px 0 0;font-size:.92rem}
+.tel{font-family:var(--num);font-size:clamp(1.7rem,7vw,2.3rem);color:var(--price);text-decoration:none;user-select:all;display:inline-block;margin-top:10px}
+.bizbox{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:14px;padding:18px 20px;font-size:.85rem;color:var(--on-navy-muted)}
+.bizbox dl{margin:8px 0 0;display:grid;grid-template-columns:auto minmax(0,1fr);gap:4px 12px}
+.bizbox dt{white-space:nowrap}
+.bizbox dd{margin:0;color:var(--on-navy)}
+.copy{grid-column:1/-1;text-align:center;font-size:.75rem;color:var(--on-navy-muted);border-top:1px solid rgba(255,255,255,.1);padding-top:18px}
+
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:30;background:var(--navy);padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));display:grid;grid-template-columns:1.75fr 1fr;gap:8px;box-shadow:0 -6px 20px rgba(0,0,0,.25)}
+.bar .btn{padding:12px 8px;white-space:nowrap;min-width:0;font-size:min(1rem,4.1vw);letter-spacing:-.02em}
+.bar .btn svg{width:16px;height:16px}
+@media (min-width:860px){.bar{display:none}}
+@media (prefers-reduced-motion:no-preference){.btn{transition:transform .12s,filter .15s}.btn:hover{filter:brightness(1.05)}.btn:active{transform:scale(.97)}.opt label{transition:border-color .15s,background-color .15s}}
+</style>
+</head>
+<body>
+
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+  <symbol id="i-calc" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M8 6h8M8 11h.01M12 11h.01M16 11h.01M8 15h.01M12 15h.01M16 15h.01M8 19h8"/></g></symbol>
+</svg>
+
+<header class="top"><div class="w">
+  <a class="brand" href="#">
+    <span class="mark" aria-hidden="true">영주</span>
+    <span><b>영주 미니 포크레인</b><small>영주시 미니굴착기 정찰제 임대·작업</small></span>
+  </a>
+  <nav aria-label="바로가기"><a href="#work">주요작업</a><a href="#calc">실시간견적</a><a href="#sites">시공현장</a><a href="#fleet">보유장비</a></nav>
+  <a class="btn btn-amber" href="tel:01086864441"><svg><use href="#i-phone"/></svg><span>전화 상담 문의</span></a>
+</div></header>
+
+<main>
+<section class="hero" id="work"><div class="w">
+  <div style="display:grid;gap:20px;min-width:0">
+    <div class="pin"><svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="2.5" fill="currentColor"/></svg>경상북도 영주시 전지역 출장 · 예약 우선</div>
+    <h1>영주시 <span style="display:inline-block">좁은 공간·토목·철거</span> 전문<br><em>얀마 미니포크레인</em> 정해진 가격으로</h1>
+    <p>골목 안 배관 터파기, 잔디밭 조경, 상가 바닥 철거, 옹벽 기초 정지 작업까지. 거품 없는 정찰제 가격과 숙련된 기술로 안전하게 시공해 드립니다.</p>
+    <div class="prices">
+      <div><span>0.5일 (반나절 / 4시간)</span><b>450,000<small>원</small></b></div>
+      <div><span>1일 (하루 일대 / 8시간)</span><b>650,000<small>원</small></b></div>
+      <div class="short"><span>4시간 미만 작업</span><b>별도 상담</b></div>
+    </div>
+    <div class="cta">
+      <a class="btn btn-amber" href="tel:01086864441"><svg><use href="#i-phone"/></svg>즉시 전화 문의하기</a>
+      <a class="btn btn-ghost" href="#calc"><svg><use href="#i-calc"/></svg>실시간 견적 계산</a>
+    </div>
+  </div>
+  <div class="hero-pic"><img src="../img/site-06.jpg" alt="건물 앞 광장에서 조경 공사 중인 얀마 미니포크레인"><span>건물 앞 광장 조경 공사</span></div>
+</div></section>
+
+<section class="band" id="calc"><div class="w">
+  <div class="sh"><h2>실시간 작업 견적 계산기</h2><p>작업 조건에 맞는 예상 비용을 바로 확인해 보세요.</p></div>
+  <form class="card calc" id="cf" autocomplete="off">
+    <div class="q"><label for="eq">1. 장비 선택</label>
+      <select id="eq"><option>얀마 ViO17 (기본 일대)</option><option>얀마 ViO20 (기본 일대)</option><option>얀마 ViO35 (기본 일대)</option></select></div>
+    <fieldset class="q"><legend>2. 작업 시간 선택</legend>
+      <div class="opts">
+        <div class="opt"><input type="radio" name="time" id="t4" value="450000" data-label="반나절 (4시간)" checked><label for="t4"><span><b>반나절 (4시간)</b><span>450,000원</span></span></label></div>
+        <div class="opt"><input type="radio" name="time" id="t8" value="650000" data-label="하루 일대 (8시간)"><label for="t8"><span><b>하루 일대 (8시간)</b><span>650,000원</span></span></label></div>
+      </div>
+        <div class="opt"><input type="radio" name="time" id="t0" value="0" data-label="4시간 미만 (별도 상담)"><label for="t0"><span><b>4시간 미만</b><span>별도 상담</span></span></label></div></fieldset>
+    <fieldset class="q"><legend>3. 어태치먼트 (부속 장비 선택)</legend>
+      <div class="opts">
+        <div class="opt chk"><input type="checkbox" id="a0" checked disabled><label for="a0"><span><b>기본 바가지</b><span>무료</span></span></label></div>
+        <div class="opt chk"><input type="checkbox" id="a1" value="50000" data-label="브레이카/유압파쇄기"><label for="a1"><span><b>브레이카 / 유압파쇄기</b><span>+50,000원</span></span></label></div>
+        <div class="opt chk"><input type="checkbox" id="a2" value="50000" data-label="돌집게/집게"><label for="a2"><span><b>돌집게 / 집게</b><span>+50,000원</span></span></label></div>
+      </div></fieldset>
+    <fieldset class="q"><legend>4. 작업 날짜 · 현장 주소</legend>
+      <div class="when">
+        <div class="cal-wrap"><span id="cal-lab">작업 희망 날짜</span>
+          <div class="cal" role="group" aria-labelledby="cal-lab">
+            <div class="cal-head"><button type="button" class="cal-nav" id="calPrev" aria-label="이전 달">‹</button><b id="calTitle" aria-live="polite"></b><button type="button" class="cal-nav" id="calNext" aria-label="다음 달">›</button></div>
+            <div class="cal-dow" aria-hidden="true"><span>일</span><span>월</span><span>화</span><span>수</span><span>목</span><span>금</span><span>토</span></div>
+            <div class="cal-grid" id="calGrid"></div>
+          </div>
+          <p class="cal-pick" id="calPick">원하는 날짜를 눌러 주세요. 아직 모르시면 비워 두셔도 돼요.</p>
+          <input type="hidden" id="wdate">
+        </div>
+        <label>현장 주소<input type="text" id="waddr" placeholder="예) 영주시 ○○길 12" autocomplete="street-address"></label>
+      </div></fieldset>
+    <div class="total">
+      <div><span>예상 견적 금액</span><b id="sum">450,000<small>원</small></b></div>
+      <div class="row"><a class="btn btn-amber" id="book" href="sms:01086864441">이 견적으로 예약 문의</a><button class="btn btn-line" type="button" id="copyq">견적 내용 복사 후 문자</button></div>
+    </div>
+    <p id="ctoast" aria-live="polite"></p>
+    <p class="note">현장 거리와 작업 여건에 따라 달라질 수 있어요. 정확한 금액은 전화로 확인해 드립니다.</p>
+  </form>
+</div></section>
+
+<section class="band" id="promise" style="padding-top:0"><div class="w">
+  <div class="sh"><h2>정찰제 약속</h2><p>현장에서 말없이 금액이 올라가는 일은 없습니다.</p></div>
+  <div class="vow"><b>견적 금액 그대로 받습니다.</b><span>추가 비용이 생길 일은 작업 전에 먼저 말씀드리고, 동의하신 뒤에만 진행해요.</span></div>
+  <div class="promise">
+    <article class="card"><div class="ic">₩</div><h3>가격 그대로</h3><ul><li>반나절 (4시간) 450,000원</li><li>하루 일대 (8시간) 650,000원</li><li>브레이카 · 집게는 각 +50,000원</li><li>기본 바가지는 무료</li><li><b>4시간 미만 작업은 별도 문의</b></li></ul></article>
+    <article class="card"><div class="ic">운</div><h3>운반비</h3><p>영주시 현장은 거리에 따라 장비 운반비를 작업 전에 미리 안내해 드립니다. 동해시 안은 운반비가 견적에 포함돼 있어요.</p></article>
+    <article class="card"><div class="ic">+</div><h3>추가 요금이 붙는 경우</h3><ul><li>약속한 시간을 넘겨 작업을 늘릴 때</li><li>폐기물 반출이나 덤프트럭이 필요할 때</li><li>작업 중 부속 장비를 추가할 때</li></ul><p>모두 미리 말씀드리고 동의하신 뒤에만 진행합니다.</p></article>
+    <article class="card"><div class="ic">취</div><h3>비 오는 날 · 취소</h3><ul><li>비나 눈으로 작업이 어려우면 위약금 없이 날짜를 바꿔 드려요.</li><li>전날까지 취소하시면 비용이 없습니다.</li><li>당일 출발 뒤 취소는 운반비가 생길 수 있어 미리 상의드려요.</li></ul></article>
+  </div>
+</div></section>
+
+
+<section class="band" id="fleet" style="padding-top:0"><div class="w">
+  <div class="sh"><h2>보유 장비 라인업</h2><p>얀마 미니굴착기로 현장 조건에 맞춰 투입합니다.</p></div>
+  <div class="eq"><article class="card"><div class="size">17</div><h3>얀마 ViO17</h3><p>하부 폭을 950mm까지 줄여 1m가 안 되는 대문이나 통로도 지나갑니다. 골목, 마당, 건물 실내 작업에 맞습니다.</p><dl class="spec"><dt>자체중량</dt><dd>1,801kg</dd><dt>전폭</dt><dd>950~1,280mm (가변)</dd><dt>최대 굴삭 깊이</dt><dd>2,370mm</dd><dt>최대 굴삭 반경</dt><dd>3,870mm</dd><dt>버켓 용량</dt><dd>0.04㎥</dd><dt>엔진 출력</dt><dd>14ps</dd></dl><span class="tag">초소형 특화</span></article><article class="card"><div class="size">20</div><h3>얀마 ViO20</h3><p>힘과 크기의 균형이 좋아 배관 터파기, 조경, 배수로 같은 일반 작업에 두루 씁니다.</p><dl class="spec"><dt>자체중량</dt><dd>2,160kg</dd><dt>전폭</dt><dd>1,380mm</dd><dt>최대 굴삭 깊이</dt><dd>2,410mm</dd><dt>최대 굴삭 반경</dt><dd>4,340mm</dd><dt>버켓 용량</dt><dd>0.063㎥</dd><dt>엔진 출력</dt><dd>20.4ps</dd></dl><span class="tag">범용 만능 작업</span></article><article class="card"><div class="size">35</div><h3>얀마 ViO35</h3><p>성토, 부지 정리, 깊은 터파기처럼 작업량이 많은 현장을 빠르게 처리합니다.</p><dl class="spec"><dt>자체중량</dt><dd>3,741kg</dd><dt>전폭</dt><dd>1,550mm</dd><dt>최대 굴삭 깊이</dt><dd>3,240mm</dd><dt>최대 굴삭 반경</dt><dd>5,545mm</dd><dt>버켓 용량</dt><dd>0.083㎥</dd><dt>엔진 출력</dt><dd>24.7ps</dd></dl><span class="tag">고출력 토목</span></article>
+  </div>
+  <p class="note" style="text-align:center;margin-top:14px">세 장비 모두 뒤꽁무니가 차체 폭 안에서 도는 후방 초선회형이라 벽에 붙어서도 돌 수 있어요. 제원 출처: YK건기 (얀마 미니굴삭기)</p>
+</div></section>
+
+<section class="band" id="sites" style="padding-top:0"><div class="w">
+  <div class="sh"><h2>영주 미니 포크레인 실제 시공 현장</h2><p>직접 작업한 현장에서 찍은 사진입니다.</p></div>
+  <div class="works">
+    <article class="card"><img src="../img/work-02.jpg" alt="옥상 정원 흙 작업" loading="lazy"><div class="tx"><time datetime="2026-06-22">2026.06.22</time><h3>옥상 정원 흙 작업</h3><p>크레인으로 올린 장비로 건물 옥상 화단에 흙을 넣고 골랐습니다.</p></div></article>
+    <article class="card"><img src="../img/work-03.jpg" alt="비탈 현장 땅 고르기" loading="lazy"><div class="tx"><time datetime="2025-10-30">2025.10.30</time><h3>비탈 현장 땅 고르기</h3><p>경사진 현장의 흙을 걷어 내고 평탄하게 정리했습니다.</p></div></article>
+    <article class="card"><img src="../img/work-04.jpg" alt="공장 바닥 배관 터파기" loading="lazy"><div class="tx"><time datetime="2024-11-14">2024.11.14</time><h3>공장 바닥 배관 터파기</h3><p>ViO17로 공장 실내 바닥을 깨고 배관 자리를 팠습니다.</p></div></article>
+    <article class="card"><img src="../img/work-05.jpg" alt="건물 사이 조경 정비" loading="lazy"><div class="tx"><time datetime="2024-10-18">2024.10.18</time><h3>건물 사이 조경 정비</h3><p>난간 옆 좁은 화단에 경계석을 놓고 흙을 정리했습니다.</p></div></article>
+    <article class="card"><img src="../img/work-06.jpg" alt="건물 입구 옆 배관 터파기" loading="lazy"><div class="tx"><time datetime="2024-10-17">2024.10.17</time><h3>건물 입구 옆 배관 터파기</h3><p>출입구 옆 좁은 자리에서 배관 고랑을 파고 되메웠습니다.</p></div></article>
+    <article class="card"><img src="../img/work-07.jpg" alt="잡초 우거진 마당 정리" loading="lazy"><div class="tx"><time datetime="2024-10-08">2024.10.08</time><h3>잡초 우거진 마당 정리</h3><p>집 옆 마당의 풀과 뿌리를 체 바가지로 걷어 냈습니다.</p></div></article>
+    <article class="card"><img src="../img/work-08.jpg" alt="산비탈 굴착" loading="lazy"><div class="tx"><time datetime="2024-10-03">2024.10.03</time><h3>산비탈 굴착</h3><p>숲 경사지에서 천막을 덮어 가며 흙을 파고 정리했습니다.</p></div></article>
+    <article class="card"><img src="../img/work-09.jpg" alt="밭 정리 · 나무 심을 자리" loading="lazy"><div class="tx"><time datetime="2024-09-26">2024.09.26</time><h3>밭 정리 · 나무 심을 자리</h3><p>안개 낀 밭을 체 바가지로 고르고 묘목 자리를 만들었습니다.</p></div></article>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="w">
+  <div>
+    <h2>영주 미니 포크레인</h2>
+    <p>영주시 전지역 좁은 골목, 공장 실내, 조경 및 토목 공사 전문 미니포크레인 임대 업체입니다. 정찰제 단가로 안심하고 이용해 주세요.</p>
+    <a class="tel" href="tel:01086864441">010-8686-4441</a>
+  </div>
+  <div class="bizbox">
+    <b style="color:var(--on-navy)">사업자 정보</b>
+    <dl>
+      <dt>대표자</dt><dd>한승희</dd>
+      <dt>사업자등록번호</dt><dd>535-76-00398</dd>
+      <dt>업태 / 종목</dt><dd>건설업 / 건설장비 운영업</dd>
+    </dl>
+  </div>
+  <div class="copy">© 영주 미니 포크레인. All rights reserved.</div>
+</div></footer>
+
+<div class="bar">
+  <a class="btn btn-amber" href="tel:01086864441"><svg><use href="#i-phone"/></svg>전화 010-8686-4441</a>
+  <a class="btn btn-ghost" href="#calc">견적 계산</a>
+</div>
+
+<script>
+(function(){
+  var won=function(n){return n.toLocaleString('ko-KR');};
+  var ios=/iPhone|iPad|iPod/i.test(navigator.userAgent)||(navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1);
+  function smsLink(text){return 'sms:01086864441'+(ios?'&':'?')+'body='+encodeURIComponent(text);}
+  var f=document.getElementById('cf'), sum=document.getElementById('sum'), book=document.getElementById('book'), t=document.getElementById('ctoast');
+  var dEl=document.getElementById('wdate'), grid=document.getElementById('calGrid'), title=document.getElementById('calTitle'), pick=document.getElementById('calPick'), prev=document.getElementById('calPrev'), next=document.getElementById('calNext');
+  var now=new Date(), today=new Date(now.getFullYear(),now.getMonth(),now.getDate()), view=new Date(today.getFullYear(),today.getMonth(),1), MAXM=6;
+  function iso(d){return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');}
+  function drawCal(){
+    var y=view.getFullYear(), m=view.getMonth(), first=new Date(y,m,1).getDay(), days=new Date(y,m+1,0).getDate();
+    title.textContent=y+'년 '+(m+1)+'월';
+    var off=(y-today.getFullYear())*12+m-today.getMonth(); prev.disabled=off<=0; next.disabled=off>=MAXM;
+    var h=''; for(var i=0;i<first;i++) h+='<span></span>';
+    for(var d=1;d<=days;d++){var dt=new Date(y,m,d), v=iso(dt);
+      h+='<button type="button" data-v="'+v+'"'+(dt<today?' disabled':'')+' class="'+(dt.getDay()===0?'sun ':'')+(+dt===+today?'today':'')+'" aria-pressed="'+(dEl.value===v)+'" aria-label="'+(m+1)+'월 '+d+'일">'+d+'</button>';}
+    grid.innerHTML=h;
+  }
+  function showPick(){
+    if(dEl.value){pick.innerHTML='선택한 날짜: '+fmtDate(dEl.value)+'<button type="button" id="calClear">지우기</button>';}
+    else pick.textContent='원하는 날짜를 눌러 주세요. 아직 모르시면 비워 두셔도 돼요.';
+  }
+  grid.addEventListener('click',function(e){var b=e.target.closest('button[data-v]'); if(!b||b.disabled)return; dEl.value=b.dataset.v; drawCal(); showPick(); calc();});
+  pick.addEventListener('click',function(e){if(e.target.id==='calClear'){dEl.value=''; drawCal(); showPick(); calc();}});
+  prev.addEventListener('click',function(){view.setMonth(view.getMonth()-1); drawCal();});
+  next.addEventListener('click',function(){view.setMonth(view.getMonth()+1); drawCal();});
+  drawCal();
+  function fmtDate(v){if(!v)return ''; var d=new Date(v+'T00:00'); return v.replace(/-/g,'.')+' ('+'일월화수목금토'[d.getDay()]+')';}
+  function calc(){
+    var time=f.querySelector('input[name=time]:checked');
+    var total=+time.value, adds=[];
+    ['a1','a2'].forEach(function(id){var c=document.getElementById(id); if(c.checked){total+=+c.value; adds.push(c.dataset.label);}});
+    var ask=time.value==='0';
+    sum.innerHTML=ask?'<span style="font-family:var(--body);letter-spacing:-.02em">별도 상담</span>':won(total)+'<small>원</small>';
+    var text='[영주 미니 포크레인 견적 문의]\n장비: '+document.getElementById('eq').value+'\n시간: '+time.dataset.label+'\n부속: 기본 바가지'+(adds.length?', '+adds.join(', '):'')+'\n예상 금액: '+(ask?'별도 상담'+(total?' (부속 +'+won(total)+'원)':''):won(total)+'원')+'\n현장 주소: '+document.getElementById('waddr').value.trim()+'\n희망 날짜: '+fmtDate(document.getElementById('wdate').value);
+    book.href=smsLink(text);
+    return text;
+  }
+  f.addEventListener('change',calc);
+  f.addEventListener('input',calc);
+  f.addEventListener('submit',function(e){e.preventDefault();});
+  document.getElementById('copyq').addEventListener('click',function(){
+    var text=calc();
+    function go(){ location.href=smsLink(text); }
+    try{navigator.clipboard.writeText(text).then(function(){t.textContent='견적 내용을 복사했어요. 문자 창이 열리면 그대로 보내 주세요 (010-8686-4441)';go();},function(){t.textContent='문자 창에서 010-8686-4441로 보내 주세요';go();});}
+    catch(e){t.textContent='문자 창에서 010-8686-4441로 보내 주세요';go();}
+  });
+  calc();
+})();
+</script>
+
+
+</body>
+</html>
